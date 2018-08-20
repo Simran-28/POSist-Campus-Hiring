@@ -119,6 +119,16 @@ void make_multiset_first_node(node**root)
 	}
 	
 }
+
+int longest_chain_of_main_node(node**root)
+{
+	int count=0;
+	while((*root)->reference_node_id!=NULL)
+	{
+		count++
+	}
+	return count;
+}
 	
 int main()
 {
@@ -128,4 +138,7 @@ int main()
 	make_first_node(&root); // code of first part.
 	
 	make_multiset_first_node(&root);
+	
+	cout<<longest_chain_of_main_node(&root);
+
 }
